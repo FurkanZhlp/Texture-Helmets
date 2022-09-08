@@ -1,0 +1,194 @@
+menu-basligi: "&0Şapkalar"
+
+acik: "&aAçık"
+kilitli: "&cKilitli"
+
+kilitli-esya-gorunum:
+  status: true
+  item: 'BARRIER'
+  glow: false
+sapkalar:
+  noel:
+    item: 'PAPER'
+    model: 1
+    glow: false
+    name: '&4Noel Şapkası'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  hiz:
+    item: 'PAPER'
+    model: 2
+    glow: false
+    name: '&eHız Şapkası'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  buhar-gozlukleri:
+    item: 'PAPER'
+    model: 3
+    glow: false
+    name: '&eBuhar Gözlükleri'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  ciftci:
+    item: 'PAPER'
+    model: 4
+    glow: false
+    name: '&6Çitfçi Şapkası'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  silindir:
+    item: 'PAPER'
+    model: 5
+    glow: false
+    name: '&3Silindir Şapka'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  rus-kalpagi:
+    item: 'PAPER'
+    model: 6
+    glow: false
+    name: '&6Rus Kaplağı'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  viking:
+    item: 'PAPER'
+    model: 7
+    glow: false
+    name: '&fViking Kaskı'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  polis:
+    item: 'PAPER'
+    model: 9
+    glow: false
+    name: '&bPolis Şapkası'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  korsan:
+    item: 'PAPER'
+    model: 10
+    glow: false
+    name: '&4Korsan Şapkası'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  korsan:
+    item: 'PAPER'
+    model: 11
+    glow: false
+    name: '&5Hipnoz Gözlükleri'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  yerli-kafabandi:
+    item: 'PAPER'
+    model: 12
+    glow: false
+    name: '&6Yerli Kafabandı'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  kulaklik:
+    item: 'PAPER'
+    model: 13
+    glow: false
+    name: '&6Kulaklık #1'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  melek:
+    item: 'PAPER'
+    model: 14
+    glow: false
+    name: '&6Melek'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  fotr-sapka:
+    item: 'PAPER'
+    model: 15
+    glow: false
+    name: '&3Fötr Şapka'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  kulaklik2:
+    item: 'PAPER'
+    model: 16
+    glow: false
+    name: '&bKulaklık #2'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  seytan:
+    item: 'PAPER'
+    model: 17
+    glow: false
+    name: '&4Şeytan'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  kovboy:
+    item: 'PAPER'
+    model: 18
+    glow: false
+    name: '&6Kovboy'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+  kedi:
+    item: 'PAPER'
+    model: 19
+    glow: false
+    name: '&eKedi Kulağı'
+    lore:
+      - '&7Durum: %status'
+      - ''
+      - '&7Bu eşyayı giymek için tıkla'
+
+Previous-Page:
+  item: 'ARROW'
+  name: '&eÖnceki Sayfa'
+  lore:
+    - '&7Bir önceki sayfayı görüntüle'
+Next-Page:
+  item: 'ARROW'
+  name: '&eSonraki Sayfa'
+  lore:
+    - '&7Bir sonraki sayfayı görüntüle'
+Remove-Helmet:
+  item: 'BARRIER'
+  name: '&cŞapkamı Çıkart'
+  lore:
+    - '&7Mevcut şapkanı çıkartmak için tıkla'
+Messages:
+  No-Permission: "&4Bunu yapabilmek için izniniz bulunmamakta."
+  Remove-Helmet: "&cLütfen önce kafanızdaki kaskı çıkartınız."
+  Successfully-Weared: "&aŞapkayı başarıyla kafanıza taktınız."
+  Successfully-Removed: "&aŞapkayı başarıyla çıkarttın."
+  Cannot-Remove-Like-This: "&cŞapkayı bu şekilde çıkartamazsınız. Şapkayı çıkartmak için lütfen &e/sapka &cmenüsünden çıkartınız."w

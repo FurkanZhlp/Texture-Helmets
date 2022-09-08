@@ -1,0 +1,8 @@
+com\minewebtr\rsapka\RSapka.class
+com\minewebtr\rsapka\gui\SapkaMenu.class
+com\minewebtr\rsapka\gui\providers\SapkaMenuProvider.class
+com\minewebtr\rsapka\listeners\SapkaListeners.class
+com\minewebtr\rsapka\RSapkaCommand.class
+com\minewebtr\rsapka\utils\FileStorage.class
+com\minewebtr\rsapka\utils\YamlItem.class
+com\minewebtr\rsapka\utils\RSapkaUtils.class
