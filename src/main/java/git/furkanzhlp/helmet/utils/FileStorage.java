@@ -1,6 +1,6 @@
-package com.minewebtr.rsapka.utils;
+package git.furkanzhlp.helmet.utils;
 
-import com.minewebtr.rsapka.RSapka;
+import git.furkanzhlp.helmet.TextureHemlets;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -15,13 +15,13 @@ public class FileStorage {
         this.file = file;
         this.file.getParentFile().mkdirs();
         if (!file.exists()) {
-            RSapka.getInstance().saveResource(file.getName(),false);
+            TextureHemlets.getInstance().saveResource(file.getName(),false);
         }
         this.config = (FileConfiguration) YamlConfiguration.loadConfiguration(this.file);
     }
 
     public FileStorage(final String name) {
-        this(new File(RSapka.getInstance().getDataFolder(), name + ".yml"));
+        this(new File(TextureHemlets.getInstance().getDataFolder(), name + ".yml"));
     }
 
     public File getFile() {

@@ -1,13 +1,13 @@
-menu-basligi: "&0Şapkalar"
+menu-basligi: "&0Helmets"
 
-acik: "&aAçık"
-kilitli: "&cKilitli"
+acik: "&aUnlocked"
+kilitli: "&cLocked"
 
-kilitli-esya-gorunum:
+kilitli-esya-gorunum: #Locked helmet display
   status: true
   item: 'BARRIER'
   glow: false
-sapkalar:
+sapkalar: #Helmets
   noel:
     item: 'PAPER'
     model: 1

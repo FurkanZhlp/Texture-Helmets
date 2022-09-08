@@ -1,9 +1,8 @@
-package com.minewebtr.rsapka.utils;
+package git.furkanzhlp.helmet.utils;
 
 
-import com.minewebtr.rsapka.RSapka;
+import git.furkanzhlp.helmet.TextureHemlets;
 import net.minecraft.server.v1_16_R3.NBTTagCompound;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftItemStack;
 import org.bukkit.enchantments.Enchantment;
@@ -27,15 +26,15 @@ public class YamlItem {
 
     public YamlItem(final String path) {
         this.path = path;
-        this.setType(((RSapka.config().getConfig().get(path + ".item") instanceof String)) ? Material.valueOf(RSapka.config().getConfig().getString(path + ".item").toUpperCase()) : Material.AIR);
-        this.setName(((RSapka.config().getConfig().get(path + ".name") instanceof String)) ? RSapka.config().getConfig().getString(path + ".name") : null);
-        this.setLore(RSapka.config().getConfig().getStringList(path + ".lore"));
-        this.setSlot(((RSapka.config().getConfig().get(path + ".slot") instanceof Integer)) ? RSapka.config().getConfig().getInt(path + ".slot") : 0);
-        this.setGlow(((RSapka.config().getConfig().get(path + ".glow") instanceof Boolean)) ? RSapka.config().getConfig().getBoolean(path + ".glow") : false);
+        this.setType(((TextureHemlets.config().getConfig().get(path + ".item") instanceof String)) ? Material.valueOf(TextureHemlets.config().getConfig().getString(path + ".item").toUpperCase()) : Material.AIR);
+        this.setName(((TextureHemlets.config().getConfig().get(path + ".name") instanceof String)) ? TextureHemlets.config().getConfig().getString(path + ".name") : null);
+        this.setLore(TextureHemlets.config().getConfig().getStringList(path + ".lore"));
+        this.setSlot(((TextureHemlets.config().getConfig().get(path + ".slot") instanceof Integer)) ? TextureHemlets.config().getConfig().getInt(path + ".slot") : 0);
+        this.setGlow(((TextureHemlets.config().getConfig().get(path + ".glow") instanceof Boolean)) ? TextureHemlets.config().getConfig().getBoolean(path + ".glow") : false);
     }
 
     public String getKey(String key) {
-        return RSapka.config().getConfig().getString(this.path + "."+key);
+        return TextureHemlets.config().getConfig().getString(this.path + "."+key);
     }
     public Material getType() {
         return this.type;
@@ -116,13 +115,13 @@ public class YamlItem {
             imeta.addEnchant(Enchantment.LUCK, 1, false);
         }
         item.setItemMeta(imeta);
-        if(((RSapka.config().getConfig().get(path + ".model"))) instanceof Integer){
+        if(((TextureHemlets.config().getConfig().get(path + ".model"))) instanceof Integer){
             final net.minecraft.server.v1_16_R3.ItemStack nmsitem = CraftItemStack.asNMSCopy(item);
             final NBTTagCompound nbtset = new NBTTagCompound();
             if (nmsitem.hasTag()) {
                 nbtset.a(nmsitem.getTag());
             }
-            nbtset.setInt("CustomModelData", RSapka.config().getConfig().getInt(path + ".model"));
+            nbtset.setInt("CustomModelData", TextureHemlets.config().getConfig().getInt(path + ".model"));
             nbtset.setBoolean("RSapkaItem", true);
             nmsitem.setTag(nbtset);
             return CraftItemStack.asBukkitCopy(nmsitem);

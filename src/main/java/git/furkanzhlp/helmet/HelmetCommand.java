@@ -1,16 +1,15 @@
-package com.minewebtr.rsapka;
+package git.furkanzhlp.helmet;
 
-import com.minewebtr.rsapka.gui.SapkaMenu;
+import git.furkanzhlp.helmet.gui.HelmetMenu;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.jetbrains.annotations.NotNull;
 
-public class RSapkaCommand implements CommandExecutor {
+public class HelmetCommand implements CommandExecutor {
     @Override
-    public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
-        SapkaMenu.open((Player) commandSender,1);
+    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
+        HelmetMenu.open((Player) commandSender,1);
         return false;
     }
 }

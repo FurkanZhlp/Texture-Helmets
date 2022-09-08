@@ -1,13 +1,12 @@
 name: rSapka
-author: Green
+author: FurkanZhlp
 version: 1.0.1
-description: Texturepackli sunucular için şapka plugini
-main: com.minewebtr.rsapka.RSapka
+description: 1.16.5 Helmet Plugin
+main: git.furkanzhlp.helmet.Texturehelmets
 api-version: 1.16
-depend: [SmartInvs,Vault,CMI]
+depend: [SmartInvs,Vault]
 commands:
-  rsapka:
+  helmet:
     aliases:
-      - sapka
-      - şapka
-    description: Şapka Menüsünü Açar
+      - helmets
+    description: Open's helmet menu

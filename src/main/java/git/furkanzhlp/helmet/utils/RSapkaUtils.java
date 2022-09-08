@@ -1,13 +1,12 @@
-package com.minewebtr.rsapka.utils;
+package git.furkanzhlp.helmet.utils;
 
-import com.minewebtr.rsapka.RSapka;
+import git.furkanzhlp.helmet.TextureHemlets;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.md_5.bungee.api.ChatColor;
 import net.minecraft.server.v1_16_R3.MojangsonParser;
 import net.minecraft.server.v1_16_R3.NBTTagCompound;
 import org.bukkit.Bukkit;
 import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftItemStack;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -68,7 +67,7 @@ public class RSapkaUtils {
                     nbtset.a(nmsitem.getTag());
                 }
                 if(!nbtset.getBoolean("RSapkaItem")){
-                    player.sendMessage(RSapkaUtils.colorizeRGB(RSapka.config().getConfig().getString("Messages.Remove-Helmet")));
+                    player.sendMessage(RSapkaUtils.colorizeRGB(TextureHemlets.config().getConfig().getString("Messages.Remove-Helmet")));
                     player.closeInventory();
                     return;
                 }
@@ -77,9 +76,9 @@ public class RSapkaUtils {
             rHelmet.clearLore();
             player.getInventory().setHelmet(rHelmet.complete());
             player.closeInventory();
-            player.sendMessage(RSapkaUtils.colorizeRGB(RSapka.config().getConfig().getString("Messages.Successfully-Weared")));
+            player.sendMessage(RSapkaUtils.colorizeRGB(TextureHemlets.config().getConfig().getString("Messages.Successfully-Weared")));
         }else{
-            player.sendMessage(RSapkaUtils.colorizeRGB(RSapka.config().getConfig().getString("Messages.No-Permission")));
+            player.sendMessage(RSapkaUtils.colorizeRGB(TextureHemlets.config().getConfig().getString("Messages.No-Permission")));
         }
 
     }

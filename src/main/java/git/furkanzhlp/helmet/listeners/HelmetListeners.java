@@ -1,11 +1,8 @@
-package com.minewebtr.rsapka.listeners;
+package git.furkanzhlp.helmet.listeners;
 
-import com.Zrips.CMI.Containers.ArmorTypes;
-import com.Zrips.CMI.events.CMIArmorChangeEvent;
-import com.minewebtr.rsapka.RSapka;
-import com.minewebtr.rsapka.utils.RSapkaUtils;
+import git.furkanzhlp.helmet.TextureHemlets;
+import git.furkanzhlp.helmet.utils.RSapkaUtils;
 import net.minecraft.server.v1_16_R3.NBTTagCompound;
-import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftItemStack;
 import org.bukkit.entity.Player;
@@ -19,7 +16,7 @@ import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
 
-public class SapkaListeners implements Listener {
+public class HelmetListeners implements Listener {
 
     @EventHandler
     public void onDeath(PlayerDeathEvent e){
@@ -52,21 +49,21 @@ public class SapkaListeners implements Listener {
         if(nbtset.getBoolean("RSapkaItem")){
             e.setCancelled(true);
             e.setCurrentItem(new ItemStack(Material.AIR,1));
-            p.sendMessage(RSapkaUtils.colorizeRGB(RSapka.config().getConfig().getString("Messages.Successfully-Removed")));
+            p.sendMessage(RSapkaUtils.colorizeRGB(TextureHemlets.config().getConfig().getString("Messages.Successfully-Removed")));
             return;
         }
     }
 
-    @EventHandler
-    public void ArmorChange(CMIArmorChangeEvent e) {
-        Player p = e.getPlayer();
-        if(e.getPlayer().getDisplayName().equals("FurkanZhlp")){
-            p.sendMessage(e.getOldArmorPiece().getType().toString());
-            if(e.getType().equals(ArmorTypes.HELMET)){
-                p.sendMessage(e.getOldArmorPiece().getType().toString());
-            }
-        }
-    }
+//    @EventHandler
+//    public void ArmorChange(CMIArmorChangeEvent e) {
+//        Player p = e.getPlayer();
+//        if(e.getPlayer().getDisplayName().equals("FurkanZhlp")){
+//            p.sendMessage(e.getOldArmorPiece().getType().toString());
+//            if(e.getType().equals(ArmorTypes.HELMET)){
+//                p.sendMessage(e.getOldArmorPiece().getType().toString());
+//            }
+//        }
+//    }
 
 
 }

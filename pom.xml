@@ -72,13 +72,13 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/spigot-1.16.5.jar</systemPath>
         </dependency>
-        <dependency>
-            <groupId>com.Zrips.CMI</groupId>
-            <artifactId>CMI</artifactId>
-            <version>8.7.8.2</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/CMIAPI8.7.8.2.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.Zrips.CMI</groupId>-->
+<!--            <artifactId>CMI</artifactId>-->
+<!--            <version>8.7.8.2</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/lib/CMIAPI8.7.8.2.jar</systemPath>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>fr.minuskube.inv</groupId>
             <artifactId>smart-invs</artifactId>
